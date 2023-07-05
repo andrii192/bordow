@@ -1,0 +1,120 @@
+.skill-ribbon {
+    position: relative;
+    z-index: 9;
+    height: 40px;
+    background-color: #FFAE1B;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    // .skill-ribbon--second
+    &--second {
+        background-color: #000000;
+
+        .skill-ribbon__item {
+            color: #FFAE1B;
+            
+  
+          
+        }
+    }
+
+    // .skill-ribbon__inner
+
+    &__inner {
+        display: inline-block;
+        animation: scroll 25s infinite linear;
+    }
+
+    // .skill-ribbon__item
+
+    &__item {
+        min-width: fit-content;
+        font-family: $fon-U;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 100%;
+        /* identical to box height, or 20px */
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #000000;
+        padding: 10px 0;
+
+        span {
+            margin-left: rem-calc(40);
+            padding-right: rem-calc(40);
+        
+        }
+    }
+}
+
+ 
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1100px) {}
+
+@media (min-width: 1240px) {}
+
+@media (min-width: 1686px) {}
+
+@media (min-width: 1786px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .skill-ribbon {
+        height: 30px;
+    }
+    .skill-ribbon__item{
+        font-size: 12px;
+        span {
+            margin-left: rem-calc(20);
+        }
+    }
+}
+
+@media (max-width: 579px) {}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 379px) {}
